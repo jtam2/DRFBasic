@@ -14,8 +14,8 @@ class BasicAPI(APIView):
     def post(self, request):
         req_data = request.data
         data = {
-            'first_name': req_data.get('first_name'),
-            'last_name': req_data.get('last_name')
+            'first_name': 'HELLO',
+            'last_name': 'HERE I AM'
         }
         time.sleep(900)
         return Response(data, status=status.HTTP_200_OK)
